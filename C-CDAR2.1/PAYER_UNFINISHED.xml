@@ -128,7 +128,8 @@
                     <!-- Describes the Health Plan (SHALL) (could also be an authorization activity describing an individual authorization) -->
                     <entryRelationship typeCode="REFR">
                         <act classCode="ACT" moodCode="DEF">
-                            <templateId root="2.16.840.1.113883.10.20.1.19" />
+                            <!-- For moodCode="DEF" the templateId is left out, or else it will cause a conformance error -->
+                            <!--<templateId root="2.16.840.1.113883.10.20.1.19" /> -->
                             <!-- Plan ID -->
                             <id root="1.3.6.1.4.1.3443" extension="911-87726-04" />
                             <!-- Plan type;  -->
